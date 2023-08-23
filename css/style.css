@@ -50,8 +50,9 @@ section {
   border: none !important;
   /* margin-top: 70px; */
 }
-body {
-  overflow-x: hidden;
+body,
+html {
+  overflow-x: hidden !important;
 }
 
 .overlay {
