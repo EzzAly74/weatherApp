@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather | الطقس</title>
+    <link rel="shortcut icon" href="images/logo@2x.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg p-3">
+      <div class="container">
+        <a
+          class="logo d-block d-flex justify-content-center align-items-center column-gap-2"
+          href="#"
+        >
+          <img src="images/logo@2x.png" class="img-fluid" alt="" />
+          <div class="logo_text">
+            <p>Weather</p>
+            <span>tagline goes here</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa-solid fa-bars" style="color: #ffffff"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-center align-items-center gap-4"
+          >
+            <li class="nav-item">
+              <a class="nav-link home active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="position-relative">
+      <div
+        class="overlay position-relative w-100 d-flex justify-content-center"
+      >
+        <div class="container">
+          <input
+            type="text"
+            name=""
+            id="find"
+            placeholder="Find Your Location"
+            class="form-control rounded-pill py-3 mx-auto ps-3 shadow-none my-5"
+          />
+          <div class="row mx-3">
+            <div class="col-md-4 my-2">
+              <div
+                class="date d-flex justify-content-between px-3 align-items-center py-2"
+              >
+                <span class="day"></span>
+                <div>
+                  <span class="dayno">0</span>
+                  <span class="mon"></span>
+                </div>
+              </div>
+              <div class="weather p-3 d-flex flex-column row-gap-3">
+                <h5 class="text-secondary city"></h5>
+                <h1 class="text-center h1">
+                  <span class="temp_c">0</span><sup>o</sup>C
+                  <img src="images/116.png" alt="" class="icc" />
+                </h1>
+                <span class="text-info textInfo"></span>
+
+                <div class="icons d-flex column-gap-4">
+                  <div class="one d-flex column-gap-1">
+                    <img src="images/icon-umberella.png" alt="" />
+                    <span class="text-secondary">20%</span>
+                  </div>
+                  <div class="two d-flex column-gap-1">
+                    <img src="images/icon-wind.png" alt="" />
+                    <span class="text-secondary">18km/h</span>
+                  </div>
+                  <div class="three d-flex column-gap-1">
+                    <img src="images/icon-compass.png" alt="" />
+                    <span class="text-secondary">East</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-2">
+              <div
+                class="date d-flex justify-content-center align-items-center py-2"
+                style="background-color: #222530"
+              >
+                <span class="day2"></span>
+              </div>
+              <div class="weather text-center py-4 row-gap-2">
+                <img src="images/116.png" alt="" class="secondIcc" />
+                <h1 class="text-center">
+                  <span class="maxtemp_c">0</span><sup>o</sup>C
+                </h1>
+                <h4 class="text-center text-secondary">
+                  <span class="mintemp_c">0</span><sup>o</sup>
+                </h4>
+                <span class="text-info textInfo2"></span>
+              </div>
+            </div>
+            <div class="col-md-4 my-2">
+              <div
+                class="date d-flex justify-content-center align-items-center py-2"
+              >
+                <span class="day3"></span>
+              </div>
+              <div class="weather text-center py-4 row-gap-2">
+                <img src="images/116.png" alt="" class="thirdIcc" />
+                <h1 class="text-center">
+                  <span class="maxtemp_c2">0</span><sup>o</sup>C
+                </h1>
+                <h4 class="text-center text-secondary">
+                  <span class="mintemp_c2">0</span><sup>o</sup>
+                </h4>
+                <span class="text-info textInfo3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img id="myImage" src="images/banner.png" class="w-25" alt="" />
+    </section>
+
+    <footer class="position-relative">
+      <div class="container">
+        <div class="hambozo d-flex justify-content-around">
+          <div class="inp d-flex justify-content-around">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control rounded-pill py-3 border-0 ps-3 w-100"
+              placeholder="Enter Your Email To Subscribe"
+            />
+            <button class="subscribe btn btn-info rounded-pill px-4 my-1">
+              Subscribe
+            </button>
+          </div>
+          <div class="brands d-flex align-items-center column-gap-1">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-behance"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/rainyday.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

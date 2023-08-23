@@ -1,0 +1,132 @@
+* {
+  /* padding: 0px !important; */
+  text-decoration: none !important;
+}
+section * {
+  padding: 0px !important;
+}
+img[src="images/logo@2x.png"] {
+  width: 50px;
+}
+nav {
+  background-color: #1e202b;
+  z-index: 45618916;
+}
+.logo_text {
+  line-height: 10px;
+}
+.logo_text p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+.logo_text span {
+  font-size: 10px;
+  color: #bfc1c8;
+  font-weight: 300;
+}
+.nav-link {
+  color: #fff !important;
+  transition: 0.25s ease-in-out !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+.active {
+  color: #03a0d9 !important;
+  border: 1px solid #03a0d9;
+  width: fit-content;
+  text-align: center;
+}
+
+.navbar-toggler {
+  color: #fff !important;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+section {
+  border: none !important;
+  /* margin-top: 70px; */
+}
+body {
+  overflow-x: hidden;
+}
+
+.overlay {
+  z-index: 421;
+  color: #fff;
+  /* height: 100% !important; */
+  width: 100%;
+}
+section input {
+  color: #fff !important;
+  border: none !important;
+  background-color: #1e202b !important;
+  width: 80% !important;
+}
+input::placeholder {
+  color: #757575 !important;
+}
+.col-md-4:nth-child(odd) {
+  background-color: #323544;
+}
+
+.col-md-4:nth-child(even) {
+  background-color: #262936;
+}
+
+h1.h1 {
+  font-size: 70px;
+}
+.date {
+  background-color: #2d303d;
+}
+footer {
+  z-index: 99990;
+  background-color: #262936;
+  padding: 50px 20px !important;
+  bottom: 0px;
+}
+footer input {
+  width: 100% !important;
+  background-color: #1e202b !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.brands {
+  color: #009ad8;
+}
+.brands i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #1e202b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+.brands i:hover {
+  background-color: #009ad8;
+  color: #fff;
+}
+.subscribe {
+  transform: translateX(-104%);
+  background-color: #009ad8;
+}
+.inp {
+  min-width: 80% !important;
+}
+@media (max-width: 768px) {
+  .hambozo {
+    flex-direction: column !important;
+    row-gap: 20px;
+  }
+  .inp {
+    min-width: 130% !important;
+  }
+}
